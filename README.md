@@ -51,9 +51,9 @@ What are Components?
 
 Angular components are the basic building blocks of your app. Each component defines:
 
-    Any necessary imports needed by the component
-    A component decorator, which includes properties that allow you to define the template, CSS styling, animations, etc..
-    A class, which is where your component logic is stored.
+Any necessary imports needed by the component
+A component decorator, which includes properties that allow you to define the template, CSS styling, animations, etc..
+A class, which is where your component logic is stored.
 
 Angular components reside within the /src/app folder:
 
