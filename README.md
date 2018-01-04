@@ -45,3 +45,47 @@ To serve your project in the browser, which is useful for development as it auto
     $ ng serve
     
 Now You have a fresh copy of Angular 5 ready and waiting for you to develop.
+
+
+What are Components?
+
+Angular components are the basic building blocks of your app. Each component defines:
+
+Any necessary imports needed by the component
+A component decorator, which includes properties that allow you to define the template, CSS styling, animations, etc..
+A class, which is where your component logic is stored.
+
+Angular components reside within the /src/app folder:
+
+    > src
+      > app
+        app.component.ts  
+        app.component.html   
+        app.component.scss  
+
+By default, the Angular CLI that we used to install the project just includes the /src/app/app.component files. A little later on, we will use the CLI to generate a new component for us and you will see how the folder structure reacts.
+
+# The Basic Component File
+
+    import { Component } from '@angular/core';
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.scss']
+    })
+    export class AppComponent {
+      title = 'app';
+    }
+
+# Creating a New Component
+
+    $ ng generate component contact or ng g c contact
+    
+    // Output:
+
+    create src/app/contact/contact.component.html (23 bytes)
+    create src/app/contact/contact.component.spec.ts (614 bytes)
+    create src/app/contact/contact.component.ts (262 bytes)
+    create src/app/contact/contact.component.scss (0 bytes)
+    update src/app/app.module.ts (467 bytes)
