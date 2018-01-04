@@ -38,7 +38,7 @@ The one flags we added at the end specify that we want the --routing tells the C
 It will run for awhile and then prompt you that you can cd into the new project folder. To do that, simply type
 
     
-    $ cd my-new-project
+    $ cd my-ng5-project
     
 To serve your project in the browser, which is useful for development as it automatically compiles your project and reloads it in the browser, type:
 
